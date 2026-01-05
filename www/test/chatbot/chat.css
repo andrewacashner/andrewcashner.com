@@ -1,0 +1,119 @@
+html {
+  background-color: gray;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+}
+
+h1 {
+  text-align: center;
+}
+
+div.chat-window {
+  border: 2px solid black;
+  width: 30em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  background-color: lightGray;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div.chat-messages {
+  display: flex;
+  flex-direction: column-reverse;
+  overflow: scroll;
+}
+
+p {
+  margin: 0;
+}
+
+div.chat-message {
+  width: 70%;
+  padding: 0.8ex;
+  padding-left: 2ex;
+  padding-right: 2ex;
+  margin-bottom: 1ex;
+}
+
+div.chat-message-from {
+  border-radius: 1em 1em 1em 0;
+  margin-left: 0;
+  margin-right: auto;
+  background-color: lightSlateGray;
+}
+
+div.chat-message-to {
+  border-radius: 1em 1em 0 1em;
+  margin-left: auto;
+  margin-right: 0;
+  background-color: lightSeaGreen;
+}
+
+
+div.topic h2 {
+  font-size: 120%;
+}
+
+details.article {
+  margin-left: 1em;
+}
+
+div.article h3 {
+  font-style: italic;
+  font-size: 110%;
+  margin-bottom: 1ex;
+}
+
+div.article p {
+  font-size: 90%;
+  margin-top: 1ex;
+}
+
+div.article a {
+  font-size: 80%;
+}
+
+details {
+  margin-top: 1ex;
+}
+
+form.text-input {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form.text-input input {
+  width: 100%;
+}
+
+button.send-button {
+  font-size: 180%;
+  font-weight: bold;
+  color: seaGreen;
+  text-align: center;
+  margin-left: 1ex;
+}
+
+footer {
+  position: absolute;
+  bottom: 1em;
+  width: 100%;
+}
+
+footer p {
+  font-size: 80%;
+  text-align: center;
+}

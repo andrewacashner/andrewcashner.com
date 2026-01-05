@@ -1,72 +1,35 @@
-@font-face {
-  font-family: "VenturisSans";
-  src: url("fonts/VenturisSansADF-Regular.otf");
-}
-@font-face {
-  font-family: "VenturisSans";
-  src: url("fonts/VenturisSansADF-Italic.otf");
-  font-style: italic;
-}
-@font-face {
-  font-family: "VenturisSans";
-  src: url("fonts/VenturisSansADF-Bold.otf");
-  font-weight: bold;
-}
-@font-face {
-  font-family: "VenturisSans";
-  src: url("fonts/VenturisSansADF-BoldItalic.otf");
-  font-weight: bold;
-  font-style: italic;
-}
-@font-face {
-  font-family: "FiraMono";
-  src: url("fonts/FiraMono-Regular.otf");
-}
-@font-face {
-  font-family: "FiraMono";
-  src: url("fonts/FiraMono-Bold.otf");
-  font-weight: bold;
+:root {
+  --color1: 
+  #C0D6DF;
+  --color2: 
+  #4A6FA5;
+  --color3: 
+  #166088;
+  --color4: 
+  #4F6D7A;
+  --color5: 
+  #DBE9EE;
 }
 
-html {
-  height: 100%;
+main h1 {
+  color: var(--color5);
 }
 
 body {
-  height: 100%;
   margin: 0;
-  font-family: "VenturisSans", sans-serif;
-  font-size: 105%;
-  background-color: FloralWhite;
+  font-family: sans-serif;
+  background-color: var(--color1);
 }
 
 header {
-  margin-top: 0;
-  margin-bottom: 1em;
-  margin-left: 0;
-  margin-right: 0;
   padding-top: 1ex;
+  padding-bottom: 1ex;
   text-align: center;
+  background-color: var(--color1);
 }
 
 header h1 {
   font-size: 250%;
-}
-
-header.software {
-  background-color: LightCoral;
-}
-
-header.music {
-  background-color: CornflowerBlue;
-}
-
-header.writing {
-  background-color: LightSeaGreen;
-}
-
-header.villancicos {
-  background-color: Thistle;
 }
 
 header h1 a {
@@ -77,12 +40,12 @@ header h1 a {
 header h2 {
   font-size: 175%;
   font-style: italic;
-  padding-bottom: 1em;
 }
 
 main {
   margin-left: 1em;
   margin-right: 1em;
+  height: 100%;
 }
 
 main p {
@@ -94,24 +57,26 @@ div.streams {
   margin-right: -1em;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 section.stream {
-  min-height: 30%;
+  height: 33%;
   padding: 1em;
 }
 
-section.stream.software {
-  background-color: LightCoral;
+.software {
+  background-color: var(--color2);
 }
 
-section.stream.music {
-  background-color: CornflowerBlue;
+.music {
+  background-color: var(--color3);
 }
 
-section.stream.writing {
-  background-color: LightSeaGreen;
+.writing {
+  background-color: var(--color4);
 }
+
 
 section.stream h1 {
   font-size: 200%;
@@ -145,6 +110,9 @@ a.panel {
 
 footer {
   text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 footer p {
