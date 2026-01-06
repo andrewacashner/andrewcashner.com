@@ -11,11 +11,32 @@
   #DBE9EE;
 }
 
-/*
-Fira Sans
-Roboto Slab
-Rosario
-*/
+@font-face {
+  font-family: "Linux Biolinum O";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/LinBiolinum_R.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Linux Biolinum O";
+  font-style: italic;
+  font-weight: normal;
+  src: url("fonts/LinBiolinum_RI.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Linux Biolinum O";
+  font-weight: bold;
+  font-style: normal;
+  src: url("fonts/LinBiolinum_RB.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Fira Mono";
+  src: url("fonts/FiraMono-Regular.otf") format("opentype");
+}
+
 body {
   margin: 0;
   background-color: var(--color1);
@@ -76,7 +97,7 @@ section.stream {
   padding: 1em;
 }
 
-section.stream h1, .software h1 a, .music h1 a, .writing h1 a {
+section.stream h1, .software h1 a, .music h1 a, .writing h1 a, .villancicos h1 a {
   color: var(--color5);
 }
 
@@ -84,7 +105,7 @@ section.stream h1, .software h1 a, .music h1 a, .writing h1 a {
   background-color: var(--color2);
 }
 
-.music {
+.music, .villancicos {
   background-color: var(--color3);
 }
 
@@ -136,10 +157,6 @@ section.text {
 }
 
 div.card-container {
-/*
-display: grid;
-  grid-template-columns: repeat(auto-fill, 20em);
-  */
   display: flex;
   flex-direction: row;
   overflow: scroll;
@@ -147,26 +164,19 @@ display: grid;
 
 section.card {
   min-width: 16em;
-  max-height: 24em;
+  max-height: 28em;
   border: 1px solid black;
   padding: 1em;
   margin: 1ex;
   overflow: scroll;
   background: linear-gradient(var(--color2), var(--color3));
   color: white;
-  /*
-  border-radius: 1ex;
-  */
-  display: grid;
-  grid-template-rows: 2em 6em auto 10em 2em;
+  display: flex;
+  flex-direction: column;
 }
 
 section.card h2 {
   color: var(--color1);
-}
-
-section.card h1, h2, img, ul, a.highlight {
-  display: block;
 }
 
 section.card a {
@@ -174,13 +184,15 @@ section.card a {
 }
 
 section.card a.highlight {
-  color: Turquoise;
+  color: PaleTurquoise;
   font-size: 120%;
   font-weight: bold;
+  margin-top: 1ex;
+  height: 1em;
 }
 
 section.card code {
-  font-family: "FiraMono", monospace;
+  font-family: "Fira Mono", monospace;
   font-size: 82%;
 }
 
@@ -211,6 +223,7 @@ section h1 {
 section h2 {
   font-size: 130%;
 }
+
 
 td + td {
   padding-left: 1em;
@@ -244,4 +257,10 @@ iframe {
   margin-right: auto;
   width: 25em;
   height: 15em;
+}
+
+video {
+  width: 16em;
+  margin-left: auto;
+  margin-right: auto;
 }

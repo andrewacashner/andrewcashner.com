@@ -22,13 +22,17 @@
         In May 2026 I will complete a Master of Science degree in Computer
         Science and Engineering at the State University of New York at
         Buffalo.
-        My experience includes front-end and full-stack web development, automatic music composition, embedded software-hardware systems, and digital publishing.
+        My projects include front-end and full-stack web development,
+        automatic music composition, embedded software-hardware systems, and
+        digital publishing.
         </p>
-        <ul>
+          <!--
           <li><a href="resume.pdf">Résumé</a></li>
+          -->
+        <ul>
           <li>Open-source code on <a href="https://github.com/andrewacashner">GitHub</a>
           </li>
-        </p>
+        </ul>
       </section>
       <section id="sec:projects">
         <h1>Projects</h1>
@@ -36,39 +40,76 @@
           <section class="card" id="card:youro">
             <h1>Youro</h1>
             <h2>A mobile app for a healthcare platform</h2>
-            <img />
+            <video loop muted poster controls>
+              <source src="../media/Youro-Appointment.mp4" type="video/mp4" />
+            </video>
             <ul>
-              <li>Android/iOS mobile app Javascript/React Native, integrating with existing Java SpringBoot backend</li>
+              <li>Developed cross-platform iOS/Android mobile app in React
+                Native for Youro, a healthcare startup that makes urology
+                care more accessible to patients</li>
+              <li>In collaboration with Abdul Rahman Hussain Siddique,
+                communicated with the client and software staff to capture
+                evolving specifications and integrate with existing Java SpringBoot backend and React web frontend</li>
+              <li>Features: 
+                <ul>
+                  <li>Easy-to-use interface for user base of older adults</li>
+                  <li>Simple registration flow</li>
+                  <li>Dashboard to view treatment plans</li>
+                  <li>Appointment booking and video calls</li>
+                  <li>Diagnosis questionnaire, symptom tracker</li>
+                  <li>Live messaging with the doctor</li>
+                  <li>Prescription renewals and medical information</li>
+                </ul>
+              </li>
             </ul>
             <!-- <a /> -->
           </section>
           <section class="card" id="card:arca">
             <h1>Arca musarithmica</h1>
             <h2>A device for automatic music composition from 1650</h2>
-            <img src="../media/arca.jpg" alt="Engraving of the Arca musarithmica, from Athanasius Kircher, 'Musurgia universalis' (1650)" />
+            <video loop muted poster="../media/arca.jpg" controls>
+              <source src="../media/arca.m4v" type="video/mp4" />
+            </video>
             <ul>
-              <li>Command-line app in Haskell</li>
-              <li>Web interface in Javascript and PHP</li>
+              <li>Implemented Athanasius Kircher’s 1650 algorithmic
+                composition system, translating Latin description into
+                Haskell software</li>
+              <li>Web frontend in JavaScript and PHP enables non-technical
+                users to generate music, see the notation, and hear it via
+                MIDI</li>
               <li>Subject of <a href="https://arca1650.info/about.html">two published articles</a></li>
             </ul>
+            <p>
             <a class="highlight" href="https://arca1650.info">https://arca1650.info</a>
+            </p>
           </section>
           <section class="card" id="card:heist">
             <h1>Bank Heist</h1>
             <h2>A puzzle game for embedded microcontroller system</h2>
-            <img />
+            <img src="../media/microcontroller-angle.jpg" />
+            <!--
+            <img src="../media/microcontroller.jpg" />
+            -->
             <ul>
               <li>In ARM assembly and C</li>
+              <li>With Ryan Miner, designed and assembled a custom
+                hardware-software system using the TI-MSPMG0-3507
+                microcontroller and peripherals including LEDs, LCD, keypad,
+                dipswitches, and buzzers</li>
+              <li>Programmed an escape-room puzzle game featuring music
+                synthesis and sound effects, in C and ARM assembly</li>
             </ul>
-            <!-- <a /> -->
           </section>
           <section class="card" id="card:chronoquiz">
             <h1>Chronoquiz</h1>
             <h2>A web app to build and share timeline quiz games</h2>
             <img src="../media/chronoquiz.png" alt="Screenshot of chronoquiz.net showing a timeline of history fact cards" />
             <ul>
-              <li>Front end in Typescript with React.js framework</li>
-              <li>Back end in Python with Django framework, MySQL database</li>
+              <li>Created a website that enables users to create and share
+                history timeline quiz games, developed for a history
+                professor</li>
+              <li>Frontend in Typescript with React.js framework;
+              Backend in Python with Django framework, MySQL database</li>
             </ul>
             <a class="highlight" href="https://chronoquiz.net">https://chronoquiz.net</a>
           </section>
